@@ -138,10 +138,23 @@
 
   <script>
     // ===== Students: your JavaScript goes here =====
+    const formu = document.getElementById("task-form");
+      formu.addEventListener("submit", function(event){
+        event.preventDefault();
 
+        const titreinput = document.getElementById("titre");
+                const title = titreinput.value.trim();
+                if(!title){
+                    titreinput.focus();
+                    return
+                }
+        })
+     
+
+     const description = descriptioninput
 
     
-    
+
   </script>
 </body>
 </html>
